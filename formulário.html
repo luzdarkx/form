@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #444;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <div>
+
+            <form action="index.html" method="post">
+                <h1> Cadastrar usuário </h1>
+                <p>1 Dados pessoais</p>
+
+                <!--formulario-->
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required>
+                <label for="confirmarSenha">Confirmar senha:</label>
+                <input type="password" name="senha" id="confirmarSenha" required>
+                <br>
+
+                <!--radio-->
+                <label for="idade">Idade:</label>
+                <label for="mais17">Acima de 17</label>
+                <input type="radio" name="idade" id="mais17">
+
+                <label for="menosIgual17">Menos ou igual 17</label>
+                <input type="radio" name="idade" id="menosIgual17">
+
+
+                <!--area de texto-->
+                <p>2 perfil</p>
+                <label for="discricao">Descrição:</label>
+                <textarea name="discricao" id="discricao" cols="30" rows="5"></textarea><br>
+
+                <!--select-->
+                <label for="perfil">Perfil de trabalho:</label>
+                <select name="perfil" id="perfil">
+                    <option value="front-end">Front-End Developer</option>
+                    <option value="back-end">Back-End Developer</option>
+                </select>
+
+                <!--check box-->
+                <label for="programador">Programador</label>
+                <input type="checkbox" name="programador" id="programador">
+                <label for="design">Design</label>
+                <input type="checkbox" name="design" id="design">
+                <label for="analista">Analista</label>
+                <input type="checkbox" name="analista" id="analista">
+
+
+
+                <button type="submit">Enviar
+                    dados</button>
+
+
+        </div>
+    </div>
+    </form>
+</body>
+
+</html>
